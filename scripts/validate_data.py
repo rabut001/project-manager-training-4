@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 
 from build_exam import read_answers
@@ -60,6 +61,9 @@ def check_exam(exam_id: str, title: str, complete: bool, with_pdf: bool) -> list
                 errors.append(f"{where}: choices に空の肢があります（肢が図だけなら visuals に figure を入れる）")
             if not q["explanation"].strip():
                 errors.append(f"{where}: explanation が空です")
+        named = set(re.findall(r"([アイウエ])が(?:正解|正しい)", q["explanation"]))
+        if q["explanation"].strip() and q["answer"] and named != {q["answer"]}:
+            errors.append(f"{where}: 解説が示す正解 {sorted(named)} が answer {q['answer']} と違います")
     return errors
 
 
