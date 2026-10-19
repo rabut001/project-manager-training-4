@@ -1,8 +1,12 @@
 FROM mcr.microsoft.com/devcontainers/javascript-node:24-bookworm
 
-# 問題冊子の問番号の位置を探すのに使う
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-jpn \
+# tesseract は問題冊子の問番号の位置を探すのに、gh は GitHub の操作に使う
+RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+        -o /usr/share/keyrings/githubcli-archive-keyring.gpg \
+    && echo "deb [signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" \
+        > /etc/apt/sources.list.d/github-cli.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-jpn gh \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=ghcr.io/astral-sh/uv:0.13.1 /uv /uvx /usr/local/bin/
