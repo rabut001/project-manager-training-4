@@ -56,8 +56,8 @@ def check_exam(exam_id: str, title: str, complete: bool, with_pdf: bool) -> list
         if complete:
             if not q["stem"].strip():
                 errors.append(f"{where}: stem が空です")
-            if any(not str(v).strip() for v in q["choices"].values()):
-                errors.append(f"{where}: choices に空の肢があります")
+            if "figure" not in q["visuals"] and any(not str(v).strip() for v in q["choices"].values()):
+                errors.append(f"{where}: choices に空の肢があります（肢が図だけなら visuals に figure を入れる）")
             if not q["explanation"].strip():
                 errors.append(f"{where}: explanation が空です")
     return errors
