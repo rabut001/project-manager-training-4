@@ -1,0 +1,14 @@
+{
+  "name": "project-manager-training-4",
+  "build": { "dockerfile": "Dockerfile" },
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["mathematic.vscode-pdf"]
+    }
+  },
+  "forwardPorts": [5173],
+  "postCreateCommand": "npm ci && uv sync"
+}

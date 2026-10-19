@@ -1,0 +1,357 @@
+{
+  "id": "2016-h28-haru",
+  "title": "平成28年度春期",
+  "questions": [
+    {
+      "no": 1,
+      "answer": "ア",
+      "image": "2016-h28-haru/q01.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 2,
+      "answer": null,
+      "image": "2016-h28-haru/q02.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": "",
+      "answerNote": "誤りにより問題として成立しない"
+    },
+    {
+      "no": 3,
+      "answer": "イ",
+      "image": "2016-h28-haru/q03.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 4,
+      "answer": "イ",
+      "image": "2016-h28-haru/q04.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 5,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q05.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 6,
+      "answer": "ア",
+      "image": "2016-h28-haru/q06.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 7,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q07.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 8,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q08.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 9,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q09.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 10,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q10.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 11,
+      "answer": "エ",
+      "image": "2016-h28-haru/q11.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 12,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q12.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 13,
+      "answer": "イ",
+      "image": "2016-h28-haru/q13.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 14,
+      "answer": "エ",
+      "image": "2016-h28-haru/q14.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 15,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q15.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 16,
+      "answer": "エ",
+      "image": "2016-h28-haru/q16.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 17,
+      "answer": "イ",
+      "image": "2016-h28-haru/q17.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 18,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q18.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 19,
+      "answer": "エ",
+      "image": "2016-h28-haru/q19.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 20,
+      "answer": "ア",
+      "image": "2016-h28-haru/q20.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 21,
+      "answer": "ウ",
+      "image": "2016-h28-haru/q21.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 22,
+      "answer": "エ",
+      "image": "2016-h28-haru/q22.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 23,
+      "answer": "イ",
+      "image": "2016-h28-haru/q23.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 24,
+      "answer": "イ",
+      "image": "2016-h28-haru/q24.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    },
+    {
+      "no": 25,
+      "answer": "イ",
+      "image": "2016-h28-haru/q25.png",
+      "stem": "",
+      "choices": {
+        "ア": "",
+        "イ": "",
+        "ウ": "",
+        "エ": ""
+      },
+      "visuals": [],
+      "explanation": ""
+    }
+  ]
+}
