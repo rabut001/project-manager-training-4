@@ -28,6 +28,7 @@ THRESH = 180
 MIN_RUN = 9
 MIN_BAND = 9
 MAX_TEXT_LINE = 48
+MIN_TEXT_ROWS = 20  # 200dpi で本文1行の高さはおよそ 30 画素
 LEFT_SLACK = 28
 PAD_X = 40
 PAD_Y = 36
@@ -138,11 +139,22 @@ def content_bounds(
     if not ink_rows:
         return None
     # ページ番号の手前にある孤立した汚れは、問の本文から大きく離れているので捨てる。
+    # ただし、大きな空白のあとでも文字の行の高さがあるまとまり（図や表の下の肢など）は残す。
     kept = [ink_rows[0]]
-    for y in ink_rows[1:]:
+    index = 1
+    while index < len(ink_rows):
+        y = ink_rows[index]
         if y - kept[-1] > 160:
-            break
-        kept.append(y)
+            block = [y]
+            while index + 1 < len(ink_rows) and ink_rows[index + 1] - block[-1] <= 3:
+                index += 1
+                block.append(ink_rows[index])
+            if len(block) < MIN_TEXT_ROWS:
+                break
+            kept.extend(block)
+        else:
+            kept.append(y)
+        index += 1
     ink_rows = kept
     columns = [0] * width
     for y in ink_rows:
