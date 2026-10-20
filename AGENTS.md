@@ -25,6 +25,15 @@ IPA 公開のプロジェクトマネージャ試験・午前Ⅱを1問ずつ解
 ## 環境
 
 - 開発は `.devcontainer/` の開発コンテナで行う。Node.js 24、Python 3.13（uv で管理）、GitHub CLI が入っている。
+- エージェントのセッションは、開発コンテナの外（WSL2 のホスト）で動くことがある。ホストには `gh`、`node`、`uv` がなく、git の認証もない。`gh` や `git push` が要るときは、`.devcontainer/Dockerfile` のイメージで `docker run` して実行する。`~/.config/gh` に利用者のログイン情報がある。トークンは出力しない。
+
+  ```sh
+  docker build -q -t pm-training-4-dev .devcontainer   # 初回のみ
+  docker run --rm -v "$PWD":/work -v "$HOME/.config/gh":/gh-config:ro -w /work -e GH_CONFIG_DIR=/gh-config \
+    pm-training-4-dev bash -c 'git config --global --add safe.directory /work && gh auth setup-git && git push origin main'
+  ```
+
+  `git push` の前に利用者の確認を得る決まりは、コンテナ経由でも同じ。
 - 画面は Vite + React + TypeScript。UI ライブラリとルーティングのライブラリは使わない。
 - Python のスクリプトは `uv run scripts/<名前>.py` で実行する。
 
